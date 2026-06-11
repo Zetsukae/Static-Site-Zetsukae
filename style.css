@@ -1,5 +1,5 @@
 * {
-    scrollbar-color: #ffffff;
+    scrollbar-color: #FF5678 white; /*debug*/
     box-sizing: border-box;
 }
 
@@ -8,6 +8,8 @@ body {
 }
 
 .nav-bar {
+    position: fixed;
+    background-color: white;
     width: 100%;
     box-sizing: border-box;
     height: 84px;
@@ -57,13 +59,15 @@ body {
     display: inline-block;
 }
 
+/*we change from div*/
+
 .hero-section {
     width: 100%;
     display: flex;
     justify-content: space-between;
     font-family: 'Merriweather';
     font-weight: bold;
-    padding: 300px 150px 378px;
+    padding: 384px 150px 200px;
 }
 
 .brands {
@@ -91,7 +95,7 @@ body {
 
 }
 
-.work-button {
+.style-button {
     cursor: pointer;
     font-family: 'Merriweather';
     font-weight: bold;
@@ -101,11 +105,79 @@ body {
     background-color: #020E35;
     border: none;
     color: white;
-    font-size: 18px
+    font-size: 18px;
 }
 
 
 .coffee {
+    width: 592px;
+    height: 508px;
+    padding: 4px 4px 4px 4px;
+}
+
+/*we change from div*/
+
+.powered-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Merriweather';
+    padding: 0px 150px 378px;
+}
+
+.talented-section {
+    margin: 150px 0px 0px 0px;
+    font-size: 40px;
+    gap: 56px;
+    line-height: 120px;
+}
+
+.title-powered {
+    font-size: 54px;
+    margin: -20px 0px 62px 0px;
+    color: #2B2B2B;
+
+    display: inline-block;
+    line-height: 0.99;
+    padding: 0.1;
+}
+
+.title-talented {
+    text-decoration: underline;
+    text-decoration-thickness: 30px;
+    text-underline-offset: 10px;
+    text-decoration-color: #FF5678;
+
+    text-decoration-skip-ink: none;
+    text-underline-offset: -15px;
+}
+
+.subtitle-powered {
+    line-height: 23px;
+    font-size: 18px;
+    margin: -20px 0px 10px 0px;
+    color: #2B2B2B;
+}
+
+.watch {
+    font-size: 18px;
+    margin: 0px 0px 0px 14px;
+}
+
+.play {
+    margin: 0px 0px 0px 43px;
+    cursor: pointer;
+}
+
+.more {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cup {
+    margin: 100px 0px 100px 0px;
     width: 592px;
     height: 508px;
     padding: 4px 4px 4px 4px;
