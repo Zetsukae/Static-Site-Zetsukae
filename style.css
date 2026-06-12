@@ -216,7 +216,7 @@ body {
 }
 
 .fi-content {
-    padding: 0px 0px 150px 0px;
+    padding: 0px 0px 100px 0px;
     margin-top: -50px;
 }
 
@@ -290,3 +290,43 @@ body {
     font-size: 18px;
     line-height: 23px;
 }
+
+/* we change from div | similar to powered*/
+
+.bar {
+    margin: 100px 0px 100px 0px;
+    width: 780px;
+    height: 670px;
+    padding: 4px 4px 4px 4px;
+}
+
+.title-craft {
+    font-size: 54px;
+    margin: 20px 0px 62px 0px;
+    color: #020E35;
+
+    display: inline-block;
+    line-height: 72px;
+    padding: 0.1;
+}
+
+.title-customers {
+    z-index: 2;
+    font-size: 54px;
+    text-decoration: underline;
+    text-decoration-thickness: 30px;
+    text-underline-offset: 10px;
+    text-decoration-color: #FF5678;
+
+    text-decoration-skip-ink: none;
+    text-underline-offset: -18px;
+}
+
+.subtitle-customers {
+    line-height: 32px;
+    font-size: 18px;
+    margin:0px 0px 25px 0px;
+    color: #2B2B2B;
+}
+
+/* we change from div*/
