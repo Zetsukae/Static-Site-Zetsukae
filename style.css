@@ -1,5 +1,13 @@
 * {
-    scrollbar-color: #FF5678 white; /*debug*/
+    &::-webkit-scrollbar {
+        /*debug*/
+        display: none;
+        /*debug*/
+    }
+
+    /*debug*/
+    scrollbar-width: none;
+    /*debug*/
     box-sizing: border-box;
 }
 
@@ -18,6 +26,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 5px 20px #00000014;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -122,7 +131,7 @@ body {
     display: flex;
     justify-content: space-between;
     font-family: 'Merriweather';
-    padding: 0px 150px 378px;
+    padding: 0px 150px 0px;
 }
 
 .talented-section {
@@ -143,13 +152,16 @@ body {
 }
 
 .title-talented {
+    z-index: 2;
+    font-size: 54px;
     text-decoration: underline;
     text-decoration-thickness: 30px;
     text-underline-offset: 10px;
     text-decoration-color: #FF5678;
 
     text-decoration-skip-ink: none;
-    text-underline-offset: -15px;
+    text-underline-offset: -18px;
+    margin-bottom: 42px;
 }
 
 .subtitle-powered {
@@ -181,4 +193,90 @@ body {
     width: 592px;
     height: 508px;
     padding: 4px 4px 4px 4px;
+}
+
+/* We change from div */
+
+.content-section {
+    position: relative;;
+    padding: 100px 0px 0px 150px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.li-content {
+    padding: 0px 150px 0px 0px;
+    margin-top: -100px;
+}
+
+.title-enjoy {
+    z-index: 2;
+    font-size: 54px;
+    text-decoration: underline;
+    text-decoration-thickness: 30px;
+    text-underline-offset: 10px;
+    text-decoration-color: #FF5678;
+
+    text-decoration-skip-ink: none;
+    text-underline-offset: -18px;
+    margin-bottom: 120px;
+}
+
+.enjoy-section {
+    font-family: 'Merriweather', regular;
+    display: flex;
+}
+
+.circle-bg {
+    position: absolute;
+    top: 250px;
+    left: 4%;
+    transform: translate(-300px);
+    width: 780px;
+    height: 670px;
+    border-radius: 1000px;
+    background-color: #FFEEF6;
+    z-index: -1;
+} 
+
+.frog {
+    position: relative;
+    display: block;
+    margin: 30px 40px 0px 0px;
+    font-family: 'Merriweather', regular;
+    color: transparent;
+    -webkit-text-stroke: 1px #020E35;
+    font-size: 64px;
+    line-height: 1;
+    z-index: 1;
+}
+
+.enjoy-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; 
+    margin-bottom: 20px;
+    z-index: 1;
+}
+
+.enjoy-text {
+    position: relative;
+    font-size: 18px;
+    padding-top: 1px;
+    z-index: 1;
+}
+
+.int-enjoy {
+    font-size: 28px
+}
+
+.sub-enjoy {
+    font-size: 18px;
 }
