@@ -173,7 +173,7 @@ body {
 
 .watch {
     font-size: 18px;
-    margin: 0px 0px 0px 14px;
+    margin: 0px 0px 0px 5px;
 }
 
 .play {
@@ -199,7 +199,7 @@ body {
 
 .content-section {
     position: relative;;
-    padding: 100px 0px 0px 150px;
+    padding: 50px 0px 0px 150px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -212,11 +212,18 @@ body {
 
 .li-content {
     padding: 0px 150px 0px 0px;
-    margin-top: -100px;
+    margin-top: -110px;
+}
+
+.fi-content {
+    padding: 0px 0px 150px 0px;
+    margin-top: -50px;
 }
 
 .title-enjoy {
     z-index: 2;
+    font-weight: bold;
+    color: #020E35;
     font-size: 54px;
     text-decoration: underline;
     text-decoration-thickness: 30px;
@@ -235,8 +242,8 @@ body {
 
 .circle-bg {
     position: absolute;
-    top: 250px;
-    left: 4%;
+    top: 170px;
+    left: 5%;
     transform: translate(-300px);
     width: 780px;
     height: 670px;
@@ -248,12 +255,13 @@ body {
 .frog {
     position: relative;
     display: block;
-    margin: 30px 40px 0px 0px;
-    font-family: 'Merriweather', regular;
+    margin: 40px 40px 0px 0px;
+    font-family: 'Merriweather';
+    font-weight: 400;
     color: transparent;
     -webkit-text-stroke: 1px #020E35;
     font-size: 64px;
-    line-height: 1;
+    line-height: 72px;
     z-index: 1;
 }
 
@@ -262,7 +270,7 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 10px; 
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     z-index: 1;
 }
 
@@ -273,10 +281,12 @@ body {
     z-index: 1;
 }
 
-.int-enjoy {
-    font-size: 28px
+.int-enjoy h2{
+    font-size: 28px;
+    /* the 'margin-top' is on the html*/
 }
 
-.sub-enjoy {
+.sub-enjoy p{
     font-size: 18px;
+    line-height: 23px;
 }
