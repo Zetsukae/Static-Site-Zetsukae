@@ -2,19 +2,17 @@
 @layer reset, base, components, utilities;
 
 @layer reset {
-    * {
+    *, *::before, *::after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
     }
 
-    /* debug */
-    *::-webkit-scrollbar {
-        display: none;
-    }
-
-    * {
+    html, body {
         scrollbar-width: none;
+        &::-webkit-scrollbar {
+            display: none;
+        }
     }
 
     body {
@@ -23,9 +21,7 @@
 }
 
 @layer base {
-
-    body,
-    button {
+    body, button {
         font-family: 'Merriweather', serif;
         color: #2B2B2B;
         background-color: #ffffff;
@@ -181,8 +177,7 @@
         }
     }
 
-    .cup,
-    .bar {
+    .cup {
         width: 592px;
         height: 508px;
         padding: 4px;
@@ -190,6 +185,8 @@
     }
 
     .bar {
+        padding: 4px;
+        margin: 100px 0;
         width: 780px;
         height: 670px;
     }
@@ -214,7 +211,6 @@
         position: relative;
         width: 100%;
         padding: 50px 0 0 150px;
-        box-sizing: border-box;
     }
 
     .columns-container {
@@ -293,20 +289,19 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 19px;
+        gap: 32px;
     }
 
     .card {
         background-color: #ffffff;
         display: grid;
-        flex-direction: column;
         align-items: center;
         text-align: center;
-        margin: 0px 152px 200px 152px;
+        margin: 0px 150px 200px;
     }
 
     .avatar {
-        margin: 88px 160px 60px 160px;
+        margin: 88px auto 60px;
     }
 
     .block-text {
@@ -324,13 +319,54 @@
             font-size: 18px;
         }
     }
-    
-    /* --- SECTION --- */
+
+    /* --- 'PREVIOUS' SECTION --- */
+    .slide-menu {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .previous-section {
+        padding: 0 150px;
+    }
+
+    .all-in-one {
+        display: flex;
+        gap: 32px;
+    }
+
+    .outline-white {
+        color: white;
+        z-index: 2;
+        background-color: #FF5678;
+        height: 44px;
+        width: 56px;
+        text-align: center;
+        line-height: 44px;
+    }
+
+    .bottom-container,
+    .middle-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 32px;
+    }
+
+    .middle-container {
+        max-width: 519px;
+    }
+
+    .one-two { height: 672px; width: 519px; }
+    .three { height: 825px; width: 519px; }
+    .four-five { height: 396px; width: 519px; }
+    .six { height: 519px; width: 1068px; }
 }
 
 @layer utilities {
-
-    /* Class can be re-used */
     .red-sub {
         z-index: 2;
         text-decoration: underline;
@@ -346,8 +382,25 @@
         justify-content: center;
     }
 
+    .center-block {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
     .font-f {
         font-size: 54px;
         color: #020E35;
+    }
+
+    .l-r-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .rectangle-bg {
+        background: rgba(255, 238, 246, 1);
     }
 }
