@@ -8,13 +8,6 @@
         padding: 0;
     }
 
-    html, body {
-        scrollbar-width: none;
-        &::-webkit-scrollbar {
-            display: none;
-        }
-    }
-
     body {
         margin: 0;
     }
@@ -30,6 +23,10 @@
     a {
         text-decoration: none;
         color: inherit;
+    }
+
+    p {
+        color: rgba(2, 14, 53, 1);
     }
 }
 
@@ -301,6 +298,8 @@
     }
 
     .avatar {
+        height: 200px;
+        width: 200px;
         margin: 88px auto 60px;
     }
 
@@ -364,6 +363,53 @@
     .three { height: 825px; width: 519px; }
     .four-five { height: 396px; width: 519px; }
     .six { height: 519px; width: 1068px; }
+
+    /* --- Testimonial Section --- */
+    .testimonial-card {
+        border: 1px solid rgba(148, 148, 148, 1);
+        border-radius: 150px;
+    }
+
+    .un-hover-card {
+        margin-top: 58px;
+        height: 555px;
+        width: 412px;
+        padding-inline: 80px;
+        flex-shrink: 0;
+    }
+
+    .hover-card {
+        height: 672px;
+        width: 460px;
+        padding-inline: 40px;
+        flex-shrink: 0;
+    }
+
+    .star {
+        height: 27px;
+        width: 29px;
+        gap: 16px;
+    }
+
+    .star-container {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .all-cards {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+
+    .select-card {
+        margin: 100px 150px 0 150px;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 @layer utilities {
@@ -380,11 +426,15 @@
     .center {
         display: flex;
         justify-content: center;
+        text-align: center;
+    }
+
+    .space {
+        margin-bottom: 100px
     }
 
     .center-block {
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
         display: block;
     }
 
