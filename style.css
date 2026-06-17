@@ -2,7 +2,10 @@
 @layer reset, base, components, utilities;
 
 @layer reset {
-    *, *::before, *::after {
+
+    *,
+    *::before,
+    *::after {
         box-sizing: border-box;
         margin: 0;
         padding: 0;
@@ -14,7 +17,9 @@
 }
 
 @layer base {
-    body, button {
+
+    body,
+    button {
         font-family: 'Merriweather', serif;
         color: #2B2B2B;
         background-color: #ffffff;
@@ -27,6 +32,22 @@
 
     p {
         color: rgba(2, 14, 53, 1);
+    }
+
+    input, textarea {
+        font-size: 20px;
+        background-color: rgba(255, 238, 246, 1);
+        border-radius: 10px;
+        border-color: rgba(2, 14, 53, 1);
+        border: 1px solid;
+    }
+
+    input {
+        height: 70px;
+    }
+
+    textarea {
+        height: 200px;
     }
 }
 
@@ -234,12 +255,20 @@
         position: absolute;
         top: 140px;
         left: 5%;
-        transform: translateX(-300px);
         width: 780px;
         height: 670px;
         border-radius: 1000px;
         background-color: #FFEEF6;
         z-index: -1;
+    }
+
+    .circle-form {
+        top: 140px;
+        left: 5%;
+        width: 780px;
+        height: 670px;
+        border-radius: 1000px;
+        background-color: #FFEEF6;
     }
 
     .frog {
@@ -359,10 +388,25 @@
         max-width: 519px;
     }
 
-    .one-two { height: 672px; width: 519px; }
-    .three { height: 825px; width: 519px; }
-    .four-five { height: 396px; width: 519px; }
-    .six { height: 519px; width: 1068px; }
+    .one-two {
+        height: 672px;
+        width: 519px;
+    }
+
+    .three {
+        height: 825px;
+        width: 519px;
+    }
+
+    .four-five {
+        height: 396px;
+        width: 519px;
+    }
+
+    .six {
+        height: 519px;
+        width: 1068px;
+    }
 
     /* --- Testimonial Section --- */
     .testimonial-card {
@@ -406,10 +450,40 @@
     }
 
     .select-card {
-        margin: 100px 150px 0 150px;
+        margin: 100px 150px 100px 150px;
         display: flex;
         justify-content: space-between;
     }
+
+    /* --- Section Contact & formula --- */
+    .contact-section {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 150px;
+        padding-bottom: 100px;
+    }
+
+    .fill-cnt label {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .fill-cnt input,
+    textarea {
+        display: block;
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    .message {
+        resize: none;
+    }
+
+    .form-contact {
+        height: 904px;
+        width: 656px;
+    }
+
 }
 
 @layer utilities {
