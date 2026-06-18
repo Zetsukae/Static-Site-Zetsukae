@@ -31,6 +31,7 @@
     .all-brands {
         margin: -20px 0 10px 0;
         white-space: nowrap ;
+        line-height: 110px;
 
         span {
             display: inline-block;

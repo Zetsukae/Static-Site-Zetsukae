@@ -40,4 +40,8 @@
     .rectangle-bg {
         background: rgba(255, 238, 246, 1);
     }
+
+    .text-color-gr {
+        color: #2B2B2B;
+    }
 }

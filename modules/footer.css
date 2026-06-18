@@ -18,10 +18,11 @@
             color: #020E35;
         }
 
-        h3 {
+        h2 {
             font-weight: bold;
             font-size: 20px;
             color: #020E35;
+            white-space: nowrap;
         }
     }
 
@@ -36,7 +37,7 @@
 
     .copyright {
         background-color: #020E35;
-        min-height: 82px;
+        min-height: 92px;
         height: 100%;
         padding-inline: 150px;
         display: flex;
