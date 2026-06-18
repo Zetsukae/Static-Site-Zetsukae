@@ -1,120 +1,15 @@
-/* || CASCADE LAYERS */
-@layer reset, base, components, utilities;
+@layer reset, base, sections, utilities, components;
 
-@layer reset {
+@import "./base/reset.css" layer(base);
+@import "./base/base.css" layer(base);
+@import "./utilities/utilities.css" layer(utilities);
 
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
+@import "./components/btn.css" layer(components);
+@import "./modules/header.css" layer(components);
+@import "./modules/footer.css" layer(components);
 
-    html, body {
-        margin: 0;
-        overflow-x: hidden;
-        max-width: 100%;
-    }
-}
 
-@layer base {
-
-    body,
-    button {
-        font-family: 'Merriweather', serif;
-        color: #2B2B2B;
-        background-color: #ffffff;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    p {
-        color: rgba(2, 14, 53, 1);
-    }
-
-    input,
-    textarea {
-        font-size: 20px;
-        background-color: rgba(255, 238, 246, 1);
-        border-radius: 10px;
-        border-color: rgba(2, 14, 53, 1);
-        border: 1px solid;
-    }
-
-    input {
-        height: 70px;
-    }
-
-    textarea {
-        height: 200px;
-    }
-}
-
-@layer components {
-
-    /* --- NAV BAR --- */
-    .nav-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 84px;
-        padding: 8px 150px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: white;
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.08);
-        z-index: 1000;
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 60px;
-
-            a {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                color: black;
-
-                &.home-a {
-                    border-bottom: 3px solid #FF5678;
-                }
-            }
-        }
-    }
-
-    /* --- BUTTONS --- */
-    .nav-button,
-    .style-button {
-        cursor: pointer;
-        font-weight: 700;
-        border: none;
-        color: white;
-        background-color: #020E35;
-        text-align: center;
-    }
-
-    .nav-button {
-        display: inline-block;
-        width: 185px;
-        height: 68px;
-        padding: 24px 40px;
-        font-size: 16px;
-        line-height: 20px;
-    }
-
-    .style-button {
-        width: 197px;
-        height: 71px;
-        font-size: 18px;
-        box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
-    }
+@layer sections {
 
     /* --- SECTION HERO / COFFEE --- */
     .hero-section {
@@ -135,6 +30,7 @@
 
     .all-brands {
         margin: -20px 0 10px 0;
+        white-space: nowrap ;
 
         span {
             display: inline-block;
@@ -274,7 +170,7 @@
         background-color: #FFEEF6;
     }
 
-    .frog {
+    .numbers {
         position: relative;
         display: block;
         font-weight: 400;
@@ -316,7 +212,7 @@
     /* --- SECTION MEET --- */
     .meet-container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 1fr 539px 1fr;
         grid-template-rows: repeat(2, 1fr);
         gap: 32px;
     }
@@ -485,98 +381,5 @@
     .form-contact {
         height: 904px;
         width: 656px;
-    }
-
-    /* --- Section Footer --- */
-    .links {
-        height: 329px;
-        padding-inline: 150px;
-        display: flex;
-        justify-content: space-between;
-        gap: 153px;
-        margin-top: 154px;
-        flex-shrink: 0;
-        overflow-x: hidden;
-
-        p, a {
-            display: inline-block;
-            font-size: 14px;
-            margin-bottom: 16px;
-            white-space: nowrap;
-            color: #020E35;
-        }
-
-        h3 {
-            font-weight: bold;
-            font-size: 20px;
-            color: #020E35;
-        }
-    }
-
-    .adress {
-        white-space: nowrap;
-    }
-
-    .socials-icon {
-        margin-top: 32px;
-    }
-
-    .copyright {
-        background-color: #020E35;
-        min-height: 82px;
-        height: 100%;
-        padding-inline: 150px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-
-        h2, a {
-            font-size: 14px;
-            color: white;
-        }
-    }
-
-}
-
-@layer utilities {
-    .red-sub {
-        z-index: 2;
-        text-decoration: underline;
-        text-decoration-thickness: 30px;
-        text-underline-offset: -18px;
-        text-decoration-color: #FF5678;
-        text-decoration-skip-ink: none;
-        margin-bottom: 42px;
-    }
-
-    .center {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .space {
-        margin-bottom: 100px
-    }
-
-    .center-block {
-        margin-inline: auto;
-        display: block;
-    }
-
-    .font-f {
-        font-size: 54px;
-        color: #020E35;
-    }
-
-    .l-r-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        gap: 32px;
-    }
-
-    .rectangle-bg {
-        background: rgba(255, 238, 246, 1);
     }
 }

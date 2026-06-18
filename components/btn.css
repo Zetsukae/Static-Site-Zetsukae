@@ -1,0 +1,29 @@
+@layer components {
+
+    /* --- BUTTONS --- */
+    .nav-button,
+    .style-button {
+        cursor: pointer;
+        font-weight: 700;
+        border: none;
+        color: white;
+        background-color: #020E35;
+        text-align: center;
+    }
+
+    .nav-button {
+        display: inline-block;
+        width: 185px;
+        height: 68px;
+        padding: 24px 40px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .style-button {
+        width: 197px;
+        height: 71px;
+        font-size: 18px;
+        box-shadow: 0 20px 40px 5px rgba(0, 0, 0, 0.25);
+    }
+}

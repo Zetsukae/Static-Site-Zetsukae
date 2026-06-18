@@ -1,0 +1,51 @@
+    /* --- Section Footer --- */
+    .links {
+        height: 329px;
+        padding-inline: 150px;
+        display: flex;
+        justify-content: space-between;
+        gap: 153px;
+        margin-top: 154px;
+        flex-shrink: 0;
+        overflow-x: hidden;
+
+        p,
+        a {
+            display: inline-block;
+            font-size: 14px;
+            margin-bottom: 16px;
+            white-space: nowrap;
+            color: #020E35;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 20px;
+            color: #020E35;
+        }
+    }
+
+    .adress {
+        white-space: nowrap;
+        margin-bottom: 60px;
+    }
+
+    .socials-icon {
+        margin-top: 32px;
+    }
+
+    .copyright {
+        background-color: #020E35;
+        min-height: 82px;
+        height: 100%;
+        padding-inline: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2,
+        a {
+            font-size: 14px;
+            color: white;
+        }
+    }

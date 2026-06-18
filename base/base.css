@@ -1,0 +1,30 @@
+html, 
+button { 
+    font-family: 'Merriweather'
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: rgba(2, 14, 53, 1);
+}
+
+input,
+textarea {
+    font-size: 20px;
+    background-color: rgba(255, 238, 246, 1);
+    border-radius: 10px;
+    border-color: rgba(2, 14, 53, 1);
+    border: 1px solid;
+}
+
+input {
+    height: 70px;
+}
+
+textarea {
+    height: 200px;
+}

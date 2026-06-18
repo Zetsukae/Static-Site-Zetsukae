@@ -1,0 +1,43 @@
+@layer utilities {
+    .red-sub {
+        z-index: 2;
+        text-decoration: underline;
+        text-decoration-thickness: 30px;
+        text-underline-offset: -18px;
+        text-decoration-color: #FF5678;
+        text-decoration-skip-ink: none;
+        margin-bottom: 42px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .space {
+        margin-bottom: 100px
+    }
+
+    .center-block {
+        margin-inline: auto;
+        display: block;
+    }
+
+    .font-f {
+        font-size: 54px;
+        color: #020E35;
+        font-family: 'Merriweather', serif;
+    }
+
+    .l-r-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px;
+    }
+
+    .rectangle-bg {
+        background: rgba(255, 238, 246, 1);
+    }
+}
