@@ -10,21 +10,23 @@
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
+
+    <link href="https://googleapis.com" rel="stylesheet">
+
     <title>SSZ - Zebb</title> <!--Same as the favicon-->
 </head>
 
 <body> <!--Main navigation bar-->
     <header class="header-container">
         <nav class="nav-bar">
-            <img class="logo" src="assets/logo/Logo.svg" alt="Logo" />
+            <a href="index.html">
+                <img class="logo" src="assets/logo/Logo.svg" alt="Logo" />
+            </a>
             <div class="nav-links">
-                <a class="home-a" href="#hero-section">HOME</a>
-                <a href="#powered-section">ABOUT</a>
+                <a class="home-a" href="index.html">HOME</a>
+                <a href="#powered">ABOUT</a>
                 <a href="#">SERVICES</a>
-                <a href="https://zetsukae.com">OUR WORK</a>
+                <a href="#work">OUR WORK</a>
                 <button class="nav-button">CONTACT US</button>
             </div>
         </nav>
@@ -37,12 +39,12 @@
                 <h1 class="all-brands"><strong>We help to<br>Create <span>Brands</span><br>With Coffee</strong></h1>
                 <button class="style-button">See our work</button>
             </div>
-            <img class="coffee" src="assets/landing/Illustration.png" alt="Illustration Coffee">
+            <img class="coffee" src="assets/landing/Illustration.svg" alt="Illustration Coffee">
         </div>
 
         <!-- Section Powered -->
-        <div class="powered-section">
-            <img class="cup" src="assets/landing/IllustrationCup.png" alt="Illustration Cup">
+        <div class="powered-section" id="powered">
+            <img class="cup" src="assets/landing/IllustrationCup.svg" alt="Illustration Cup">
             <div class="talented-section">
                 <h1 class="title-powered">Powered by<br> <span class="red-sub">talented people  </span></h1>
                 <p class="subtitle-powered">But I must explain to you how all this mistaken idea of<br>denouncing
@@ -131,7 +133,7 @@
                     pleasure and praising pain was born and I<br>will give you a complete account of the system.</p>
                 <button class="style-button">Learn more</button>
             </div>
-            <img class="bar" src="assets/landing/IllustrationBar.png" alt="Illustration Bar">
+            <img class="bar" src="assets/landing/IllustrationBar.svg" alt="Illustration Bar">
         </div>
 
         <!-- Section Meet -->
@@ -183,10 +185,9 @@
                 </div>
             </div>
         </div>
-        </div>
 
         <!-- Section 'Previous' -->
-        <div class="previous-section">
+        <div class="previous-section" id="work">
             <h1 class="center font-f">Some of Our <span class="red-sub"> Previous Work  </span></h1>
             <div class="previous-container">
                 <div class="slide-menu">
@@ -307,7 +308,7 @@
         </div>
 
         <!-- Section Contact -->
-        <div class="contact-section">
+        <div class="contact-section" id="contactus">
             <div class="circle-form" style="margin-top: 217px;"></div>
             <div class="form-contact">
                 <h1 class="font-f" style="line-height: 72px; margin: 100px 129px 100px 0; line-height: 72px;">Need Help
@@ -327,7 +328,7 @@
         </div>
 
         <!-- Section Formula (Copy of Contact Section) -->
-        <div class="contact-section">
+        <div class="contact-section" style="padding-bottom: 40px;">
             <div class="form-contact">
                 <h1 class="font-f"
                     style="line-height: 72px; margin: 250px 129px 100px 0; line-height: 72px; white-space: nowrap;">Join
@@ -346,5 +347,73 @@
         </div>
     </main>
 </body>
+
+<footer id="footer">
+    <div class="links">
+        <div class="adress" style="margin-bottom: 60px;">
+            <img src="assets/logo/Logo.svg"><br>
+            <div class="socials-icon">
+                <a href="https://facebook.com">
+                    <img src="assets/logo/socials/facebook.svg" style="margin-right: 40px;" />
+                </a>
+                <a href="https://instagram.com">
+                    <img src="assets/logo/socials/instagram.svg" style="margin-right: 40px;" />
+                </a>
+                <a href="https://zetsukae.itch.io">
+                    <img src="assets/logo/socials/link.svg" style="margin-right: 40px;" />
+                </a>
+                <a href="https://zetsukae.com">
+                    <img src="assets/logo/socials/basket.svg" style="margin-right: 40px;" />
+                </a>
+                <a href="https://x.com">
+                    <img src="assets/logo/socials/twitter.svg" />
+                </a>
+
+            </div>
+            <h3 style=" font-size: 16px;">Address</h3><br>
+            <p style="font-size: 16px; margin-bottom: 16px;">+123 654 987</p><br>
+            <p style="font-size: 16px;">877 The Bronx, NY<br>14568 USA</p>
+        </div>
+        <div>
+            <h3>Services</h2><br>
+                <a href="index.html#footer">Search Engine Optimization</a>
+                <a href="index.html#footer">Web design & development</a>
+                <a href="index.html#footer">Social media management</a>
+                <a href="index.html#footer">Social media marketing</a>
+                <a href="index.html#footer">Content writing</a>
+                <a href="index.html#footer">Video production</a>
+        </div>
+        <div>
+            <h3>Company</h2><br>
+                <a href="index.html#footer">Case Studies</a>
+                <a href="index.html#footer">Web design & Services</a>
+                <a href="index.html#powered">About</a><br>
+                <a href="index.html#contactus">Contact Us</a>
+        </div>
+        <div>
+            <h3>About Us</h2><br>
+                <a href="index.html#footer">Featured artists</a>
+                <a href="index.html#footer">The Portal</a>
+                <a href="index.html#footer">Live events</a>
+        </div>
+        <div>
+            <h3>Legal Stuff</h2><br>
+                <a href="index.html#footer">Shipping & Delivery</a>
+                <a href="index.html#footer">Terms & Conditions</a>
+                <a href="index.html#footer">Privacy & Policy</a>
+        </div>
+        <div class="circle-bg"
+            style="transform: translateX(-190px) translateY(9910px); height: 524px; width: 609px; top: 198px;">
+        </div>
+        <div class="circle-bg" 
+            style="transform: translateX(1330px) translateY(9910px); height: 524px; width: 609px; top: 198px;">
+        </div>
+    </div>
+    <div class="copyright">
+        <h2 style="margin-right: 1025px; white-space: nowrap; font-weight: normal">Copyright ©2020 Zebb Agency. All Right Reserved</h2>
+        <a href="index.html " style="margin-right: 60px; white-space: nowrap; font-weight: normal">Cookie Policy</a>
+        <a href="index.html" style="white-space: nowrap; font-weight: normal;">Privacy Policy</a>
+    </div>
+</footer>
 
 </html>
